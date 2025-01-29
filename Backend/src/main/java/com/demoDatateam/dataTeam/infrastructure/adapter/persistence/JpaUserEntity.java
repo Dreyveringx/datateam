@@ -1,4 +1,4 @@
-package com.demoDatateam.dataTeam.domain.model;
+package com.demoDatateam.dataTeam.infrastructure.adapter.persistence;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -13,7 +13,7 @@ import lombok.NoArgsConstructor;
 @Table (name = "users")
 @NoArgsConstructor
 @AllArgsConstructor
-public class User {
+public class JpaUserEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
