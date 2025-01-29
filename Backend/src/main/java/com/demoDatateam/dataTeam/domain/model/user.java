@@ -1,6 +1,5 @@
 package com.demoDatateam.dataTeam.domain.model;
 
-import jakarta.annotation.Generated;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -14,7 +13,7 @@ import lombok.NoArgsConstructor;
 @Table (name = "users")
 @NoArgsConstructor
 @AllArgsConstructor
-public class user {
+public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
