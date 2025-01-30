@@ -2,6 +2,7 @@ package com.demoDatateam.dataTeam.infrastructure.adapter.persistence;
 
 import org.springframework.stereotype.Component;
 
+import com.demoDatateam.dataTeam.domain.model.User;
 import com.demoDatateam.dataTeam.domain.port.UserDocumentNumberPort;
 
 import lombok.RequiredArgsConstructor;

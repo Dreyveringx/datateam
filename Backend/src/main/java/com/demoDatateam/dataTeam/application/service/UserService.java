@@ -4,7 +4,7 @@ import com.demoDatateam.dataTeam.domain.port.UserDocumentTypePort;
 import com.demoDatateam.dataTeam.domain.port.UserDocumentNumberPort;
 import com.demoDatateam.dataTeam.domain.port.UserPasswordPort;
 
-public class UserService {
+public class UserService implements UserServicePort {
     private final UserDocumentTypePort documentTypePort;
     private final UserDocumentNumberPort userDocumentNumberPort;
     private final UserPasswordPort userPasswordPort;

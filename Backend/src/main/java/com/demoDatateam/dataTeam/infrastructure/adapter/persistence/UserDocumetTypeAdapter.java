@@ -17,6 +17,6 @@ public class UserDocumetTypeAdapter implements UserDocumentTypePort {
     public String getDocumentType(String type) {
         return userDocumentTypeRepository.findById(type)
         .map(UserDocumentType::getType)
-        .orElseThrow(()-> new IllegalArgumentException("Tipo de documento no valido"))
+        .orElseThrow(() -> new IllegalArgumentException("Tipo de documento no valido"))
     }
 }
