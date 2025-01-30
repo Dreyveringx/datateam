@@ -1,6 +1,6 @@
 package com.demoDatateam.dataTeam.domain.port;
 
-public interface DocumentTypePort {
+public interface UserDocumentTypePort {
 
     String getDocumentType (String type);
 }

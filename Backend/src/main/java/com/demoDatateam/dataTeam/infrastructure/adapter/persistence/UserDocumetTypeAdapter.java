@@ -5,10 +5,14 @@ import org.springframework.stereotype.Component;
 
 import com.demoDatateam.dataTeam.domain.port.UserDocumentTypePort;
 
+import lombok.RequiredArgsConstructor;
+
 @Component
-public class UserDocumetTypeAdapter implements UserDocumentTypePort{
+@RequiredArgsConstructor
+public class UserDocumetTypeAdapter implements UserDocumentTypePort {
 
     private final UserDocumentTypeRepository userDocumentTypeRepository;
+
     @Autowired
     public String getDocumentType(String type) {
         return userDocumentTypeRepository.findById(type)
