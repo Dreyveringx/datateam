@@ -1,4 +1,4 @@
-package com.demoDatateam.dataTeam.domain.model;
+package com.demoDatateam.dataTeam.infrastructure.adapter.persistence;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
