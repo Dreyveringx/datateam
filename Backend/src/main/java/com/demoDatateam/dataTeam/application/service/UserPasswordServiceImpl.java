@@ -18,7 +18,7 @@ public class UserPasswordServiceImpl implements UserPasswordService {
 
     @Override
     public boolean validateUserPassword(String userPassword){
-        return userPasswordValitador.validate(userPassword);
+        return userPasswordValitador.validateUserPassword(userPassword);
     }
 
 }

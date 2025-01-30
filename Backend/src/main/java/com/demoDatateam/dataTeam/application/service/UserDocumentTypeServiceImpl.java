@@ -18,7 +18,7 @@ public class UserDocumentTypeServiceImpl implements UserDocumentTypeService{
 
     @Override
     public boolean validateUserDocumentType(String userDocumentType){
-        return userDocumentTypeValidator.validate(userDocumentType);
+        return userDocumentTypeValidator.validateUserDocumentType(userDocumentType);
     }
 
 }

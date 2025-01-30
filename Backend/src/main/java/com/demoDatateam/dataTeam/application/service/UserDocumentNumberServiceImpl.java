@@ -18,7 +18,7 @@ public class UserDocumentNumberServiceImpl implements UserDocumentNumberService 
 
     @Override
     public boolean validateUserDocumentNumber( Number userDocumentNumber){
-        return userDocumentNumberValidator.validate(userDocumentNumber);
+        return userDocumentNumberValidator.validateUserDocumentNumber(userDocumentNumber);
     }
 
 }
