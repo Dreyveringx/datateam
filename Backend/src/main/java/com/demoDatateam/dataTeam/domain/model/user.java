@@ -1,12 +1,17 @@
 package com.demoDatateam.dataTeam.domain.model;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
-import lombok.Getter;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
-@Getter
+@Entity
+@Data
+@NoArgsConstructor
 @AllArgsConstructor
 public class User {
-    private Long id;
+    @Id
     private Integer idDocumentType;
     private Integer documentNumber;
     private String password;

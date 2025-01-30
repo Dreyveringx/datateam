@@ -1,16 +1,16 @@
 package com.demoDatateam.dataTeam.application.service;
 
-import com.demoDatateam.dataTeam.domain.port.DocumentTypePort;
+import com.demoDatateam.dataTeam.domain.port.UserDocumentTypePort;
 import com.demoDatateam.dataTeam.domain.port.UserDocumentNumberPort;
 import com.demoDatateam.dataTeam.domain.port.UserPasswordPort;
 
 public class UserService {
-    private final DocumentTypePort documentTypePort;
+    private final UserDocumentTypePort documentTypePort;
     private final UserDocumentNumberPort userDocumentNumberPort;
     private final UserPasswordPort userPasswordPort;
 
     public UserService(
-            DocumentTypePort documentTypePort,
+            UserDocumentTypePort documentTypePort,
             UserDocumentNumberPort userDocumentNumberPort,
             UserPasswordPort userPasswordPort) { 
         this.documentTypePort = documentTypePort;
