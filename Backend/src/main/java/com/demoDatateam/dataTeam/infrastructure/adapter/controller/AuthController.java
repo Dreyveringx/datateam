@@ -1,20 +1,25 @@
 package com.demoDatateam.dataTeam.infrastructure.adapter.controller;
 
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
 
-import com.demoDatateam.dataTeam.domain.port.UserDocumentNumberPort;
-import com.demoDatateam.dataTeam.domain.port.UserDocumentTypePort;
-import com.demoDatateam.dataTeam.domain.port.UserPasswordPort;
-import com.demoDatateam.dataTeam.domain.port.UserServicePort;
+import com.demoDatateam.dataTeam.domain.port.input.UserLoginService;
 
 @RestController
-@RequestMapping("api/auth")
+@RequestMapping("/api/auth")
 public class AuthController {
 
-    private final UserServicePort userServicePort;
-    private final UserPasswordPort userPasswordPort;
-    private final UserDocumentNumberPort userDocumentNumberPort;
-    private final UserDocumentTypePort userDocumentTypePort;
+    private final UserLoginService userLoginService;
 
+    @Autowired
+    public AuthController(UserLoginService userLoginService){
+        this.userLoginService = userLoginService;
+    }
+
+    @PostMapping("/login")
+    public boolean login(@RequestParam String userDocumentType,
+    @RequestParam Number userDocumentNumber,
+    @RequestParam String userPassword){
+        return userLoginService.authenticateUser(userDocumentType, userDocumentNumber, userPassword);
+    }
 }

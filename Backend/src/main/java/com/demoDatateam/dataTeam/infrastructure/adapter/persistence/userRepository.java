@@ -6,5 +6,5 @@ import com.demoDatateam.dataTeam.domain.model.User;
 
 public interface UserRepository extends JpaRepository<User, String> {
 
-    User findByUserDocumentTypeAndUserDocumentNumber(String userDocumentType, Number userDocumentNumber);
+    User findByUserDocumentTypeAndUserDocumentNumber(String userDocumentType, Integer userDocumentNumber);
 } 
